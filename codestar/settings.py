@@ -34,7 +34,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-lorrainescan-djangoblog-1flyl1xd6m4.ws.codeinstitute-ide.net',
-    '.herokuapp.com']
+    '.herokuapp.com',
+    '8000-lorrainescan-djangoblog-ruavwkissn8.ws.codeinstitute-ide.net']
 
 # Application definition
 
@@ -94,6 +95,10 @@ DATABASES = {
     dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net",
+    "https://.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
