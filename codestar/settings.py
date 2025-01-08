@@ -152,9 +152,9 @@ USE_I18N = True
 
 USE_TZ = True
 
-MESSAGES_TAGS = {
-    messages.SUCCESS: 'alter-success',
-    messages.ERROR: 'alter-danger',
+MESSAGE_TAGS = {
+    messages.SUCCESS: 'alert-success',
+    messages.ERROR: 'alert-danger',
 }
 
 # Static files (CSS, JavaScript, Images)
